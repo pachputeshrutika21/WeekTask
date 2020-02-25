@@ -1,46 +1,46 @@
-var arr=[];
+var array=[];
 function isInsertNumber() 
 {
     for(var i=0;i<=100;i++)
     {
-        arr.push(i);
+        array.push(i);
     }
-    console.log(arr);
+    console.log(array);
 }
 function acceptContent()
 {
-    for(var i=0;i<=arr.length;i++)
+    for(var i=0;i<=array.length;i++)
     {
-        console.log(arr[i]);
+        console.log(array[i]);
     }
 }
 function checkArray()
 {
-    for(let num of arr)
+    for(let number of array)
     {
-        if(fizzBuzz(num))
+        if(fizzBuzz(number))
         {
             console.log("Fizz Buzz");
         }
         else
-        if(buzz(num))
+        if(buzz(number))
         {
             console.log("Buzz");
         }
         else
-        if(fizz(num))
+        if(fizz(number))
         {
             console.log("Fizz");
         }
         else
         {
-            console.log(num);
+            console.log(number);
         }
     }
 }
-function fizzBuzz(num)
+function fizzBuzz(number)
 {
-    if(num%3==0&&num%5==0)
+    if(number%3==0 && number%5==0)
     {
         return true;
     }
@@ -49,9 +49,9 @@ function fizzBuzz(num)
         return false;
     }
 }
-function buzz(num)
+function buzz(number)
 {
-    if(num%5==0)
+    if(number%5==0)
     {
         return true;
     }
@@ -60,9 +60,9 @@ function buzz(num)
         return false;
     }
 }
-function fizz(num)
+function fizz(number)
 {
-    if(num%3==0)
+    if(number%3==0)
     {
         return true;
     }
