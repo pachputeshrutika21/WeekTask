@@ -36,7 +36,6 @@ function checkArray()
                     {
                         console.log(arr[i]);
                     }
-                    
         }
     return true;
 }
