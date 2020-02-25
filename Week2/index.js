@@ -16,27 +16,50 @@ function acceptContent()
 }
 function checkArray()
 {
-        for(let i=0;i<=arr.length;i++)
-        {
-            if(arr[i]%3==0&&arr[i]%5==0)
-            {
-                console.log("FizzBuzz");
-            }
-            else
-                if(arr[i]%5==0)
-                {
-                    console.log("Buzz");
-                }
-                else
-                    if(arr[i]%3==0)
-                    {
-                       console.log("Fizz");
-                    }
-                    else
-                    {
-                        console.log(arr[i]);
-                    }
-        }
-    return true;
+for(let i=0;i<=arr.length;i++)
+{
+    if(arr[i]%3==0 && arr[i]%5==0)
+    {
+        console.log("Fizz Buzz");
+    }
+    else
+    if(arr[i]%5==0)
+    {
+        console.log("Buzz");
+    }
+    else
+    if(arr[i]%3==0)
+    {
+        console.log("Fizz");
+    }
+    else
+    {
+        console.log(arr[i]);
+    }
+}
 }
 
+// const checkArray=()=>
+// {
+//         for(let i=0;i<=arr;i++)
+//         {
+//             if(arr%3==0&&arr%5==0)
+//             {
+//                 console.log("FizzBuzz");
+//             }
+//             else
+//                 if(arr%5==0)
+//                 {
+//                     console.log("Buzz");
+//                 }
+//                 else
+//                     if(arr%3==0)
+//                     {
+//                        console.log("Fizz");
+//                     }
+//                         else
+//                         {
+//                             console.log(arr);
+//                         }
+//         }
+// }
