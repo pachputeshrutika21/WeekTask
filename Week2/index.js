@@ -37,15 +37,18 @@ function checkArray()
         else
         {
             console.log(number);
-        }  
+        } 
+        if(number%3==0 && number%5==0) 
+        {
+            dualDivisibleNumbers.push(number);
+        }
     }   
 }
 function fizzBuzzCheck(number)
 {
     if(number%3==0 && number%5==0)
     {
-        let values=[true,dualDivisibleNumbers.push(number)]; 
-        return values;
+        return true;
     }
     else
     {
