@@ -5,12 +5,12 @@ function isInsertNumber()
     {
         arr.push(i);
     }
-console.log(arr);
+    console.log(arr);
 }
 function isAccept()
 {
-    for(var i=0;i<arr.length;i++)
+    for(var i=0;i<=arr.length;i++)
     {
-    console.log(arr[i]);
+        console.log(arr[i]);
     }
 }
