@@ -9,10 +9,7 @@ console.log(arr);
 }
 function isAccept()
 {
-    for(i=0;i<=100;i++)
-    {
-       arr.push(i);
-    }
+    isInsertNumber();
     for(i=0;i<arr.length;i++)
     {
         console.log(arr[i]);
