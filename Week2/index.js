@@ -16,50 +16,58 @@ function acceptContent()
 }
 function checkArray()
 {
-for(let i=0;i<=arr.length;i++)
+    for(let num of arr)
+    {
+        if(fizzBuzz(num))
+        {
+            console.log("Fizz Buzz");
+        }
+        else
+        if(buzz(num))
+        {
+            console.log("Buzz");
+        }
+        else
+        if(fizz(num))
+        {
+            console.log("Fizz");
+        }
+        else
+        {
+            console.log(num);
+        }
+    }
+}
+function fizzBuzz(num)
 {
-    if(arr[i]%3==0 && arr[i]%5==0)
+    if(num%3==0&&num%5==0)
     {
-        console.log("Fizz Buzz");
-    }
-    else
-    if(arr[i]%5==0)
-    {
-        console.log("Buzz");
-    }
-    else
-    if(arr[i]%3==0)
-    {
-        console.log("Fizz");
+        return true;
     }
     else
     {
-        console.log(arr[i]);
+        return false;
     }
 }
+function buzz(num)
+{
+    if(num%5==0)
+    {
+        return true;
+    }
+    else
+    {
+        return false;
+    }
 }
-
-// const checkArray=()=>
-// {
-//         for(let i=0;i<=arr;i++)
-//         {
-//             if(arr%3==0&&arr%5==0)
-//             {
-//                 console.log("FizzBuzz");
-//             }
-//             else
-//                 if(arr%5==0)
-//                 {
-//                     console.log("Buzz");
-//                 }
-//                 else
-//                     if(arr%3==0)
-//                     {
-//                        console.log("Fizz");
-//                     }
-//                         else
-//                         {
-//                             console.log(arr);
-//                         }
-//         }
-// }
+function fizz(num)
+{
+    if(num%3==0)
+    {
+        return true;
+    }
+    else
+    {
+        return false;
+    }
+}
