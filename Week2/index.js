@@ -14,4 +14,30 @@ function acceptContent()
         console.log(arr[i]);
     }
 }
+function checkArray()
+{
+        for(let i=1;i<=arr.length;i++)
+        {
+            if(arr[i]%3==0&&arr[i]%5==0)
+            {
+                console.log("FizzBuzz");
+            }
+            else
+                if(arr[i]%5==0)
+                {
+                    console.log("Buzz");
+                }
+                else
+                    if(arr[i]%3==0)
+                    {
+                       console.log("Fizz");
+                    }
+                    else
+                    {
+                        console.log(arr[i]);
+                    }
+                    
+        }
+    return true;
+}
 
