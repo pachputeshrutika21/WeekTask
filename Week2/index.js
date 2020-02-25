@@ -44,7 +44,8 @@ function fizzBuzzCheck(number)
 {
     if(number%3==0 && number%5==0)
     {
-        return true,dualDivisibleNumbers.push(number); 
+        let values=[true,dualDivisibleNumbers.push(number)]; 
+        return values;
     }
     else
     {
