@@ -21,6 +21,7 @@ function checkArray()
     {
         if(fizzBuzzCheck(number))
         {
+           // dualDivisibleNumbers.push(number);
             console.log("Fizz Buzz");
         }
         else
@@ -37,13 +38,16 @@ function checkArray()
         {
             console.log(number);
         }
+         if(number%3==0 && number%5==0)
+         {
+             dualDivisibleNumbers.push(number);
+         }
     }
 }
 function fizzBuzzCheck(number)
 {
     if(number%3==0 && number%5==0)
     {
-        dualDivisibleNumbers.push(number);
         return true;
     }
     else
