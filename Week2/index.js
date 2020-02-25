@@ -1,4 +1,4 @@
-var array=[];
+const array=[];
 let dualDivisibleNumbers=[];
 function isInsertNumber() 
 {
@@ -42,6 +42,10 @@ function checkArray()
         {
             console.log(number);
         } 
+        // if(number%3==0 && number%5==0)
+        // {
+        //     dualDivisibleNumbers.push(number);
+        // }
     }   
 }
 function fizzBuzzCheck(number)
