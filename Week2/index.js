@@ -16,7 +16,7 @@ function acceptContent()
 }
 function checkArray()
 {
-        for(let i=1;i<=arr.length;i++)
+        for(let i=0;i<=arr.length;i++)
         {
             if(arr[i]%3==0&&arr[i]%5==0)
             {
