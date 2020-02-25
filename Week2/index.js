@@ -18,17 +18,17 @@ function checkArray()
 {
     for(let number of array)
     {
-        if(fizzBuzz(number))
+        if(fizzBuzzCheck(number))
         {
             console.log("Fizz Buzz");
         }
         else
-        if(buzz(number))
+        if(buzzCheck(number))
         {
             console.log("Buzz");
         }
         else
-        if(fizz(number))
+        if(fizzCheck(number))
         {
             console.log("Fizz");
         }
@@ -38,7 +38,7 @@ function checkArray()
         }
     }
 }
-function fizzBuzz(number)
+function fizzBuzzCheck(number)
 {
     if(number%3==0 && number%5==0)
     {
@@ -49,7 +49,7 @@ function fizzBuzz(number)
         return false;
     }
 }
-function buzz(number)
+function buzzCheck(number)
 {
     if(number%5==0)
     {
@@ -60,7 +60,7 @@ function buzz(number)
         return false;
     }
 }
-function fizz(number)
+function fizzCheck(number)
 {
     if(number%3==0)
     {
