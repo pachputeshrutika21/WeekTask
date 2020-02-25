@@ -2,8 +2,12 @@ var array=[];
 let dualDivisibleNumbers=[];
 function isInsertNumber() 
 {
-    for(var i=0;i<=100;i++)
+    for(let i=0;i<=100;i++)
     {
+        if(i%3==0 && i%5==0)
+        {
+            dualDivisibleNumbers.push(i);
+        }
         array.push(i);
     }
     console.log(array);
@@ -38,10 +42,6 @@ function checkArray()
         {
             console.log(number);
         } 
-        if(number%3==0 && number%5==0) 
-        {
-            dualDivisibleNumbers.push(number);
-        }
     }   
 }
 function fizzBuzzCheck(number)
